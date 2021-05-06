@@ -1,0 +1,265 @@
+/* Home page */
+.homePage {
+    position: relative;
+    font-family: 'Fredoka One', cursive;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
+    background-size: 200% 200%;
+    background-repeat: no-repeat;
+}
+
+.homeHeading {
+    min-width: 900px;
+    max-width: 1000px;
+    border: 2px solid none;
+    margin: auto;
+    color: #fff;
+}
+
+.homeHeading h1 {
+    font-size: 70px;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+}
+
+.homeHeading h3 {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+}
+
+.homeOptions {
+    width: 60%;
+    min-width: 400px;
+    max-width: 600px;
+    border: 2px solid none;
+    padding: 20px;
+    height: 130px;
+    position: relative;
+    margin: auto;
+    top: 150px;
+}
+
+.homeOptions .beginOrder {
+    width: 50%;
+    min-width: 200px;
+    max-width: 250px;
+    border: 2px solid;
+    border-radius: 10px;
+    float: left;
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    background-color: #fff;
+    -webkit-box-shadow: 7px 6px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 6px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 7px 6px 5px 0px rgba(0,0,0,0.75);
+    transition: 0.2s;
+}
+
+.homeOptions .inform {
+    width: 40%;
+    min-width: 100px;
+    max-width: 150px;
+    border: 2px solid;
+    border-radius: 10px;
+    float: right;
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    background-color: #fff;
+    -webkit-box-shadow: 7px 6px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 6px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 7px 6px 5px 0px rgba(0,0,0,0.75);
+    transition: 0.2s;
+}
+
+.homeOptions .beginOrder:hover {
+    color: white;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
+    cursor: pointer;
+}
+
+.homeOptions .inform:hover {
+    color: white;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 100%, rgba(252,176,69,1) 100%);
+    cursor: pointer;
+}
+
+.homeOptions .beginOrder:active {
+    -webkit-box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.homeOptions .inform:active {
+    -webkit-box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.homeFooter {
+    width: 100%;
+    border: 2px solid;
+    height: 100px;
+    position: relative;
+    top: 400px;
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+    padding: 15px;
+    line-height: 1.5em;
+    background-color: #fff;
+}
+
+.homeFooter .mySocialMedia {
+    border: 2px solid;
+}
+
+.homeFooter .footerLaw {
+    line-height: 1.5em;
+}
+
+
+/* Making pizza part one */
+
+/* body class */
+.questionOne {
+    position: relative;
+}
+
+.pizzaPartOne {
+    border: 2px solid black;
+    position: absolute;
+    top: 200px;
+    left: 35%;
+    width: 30%;
+}
+
+.pizzaPartOne form {
+    padding: 15px;
+
+
+}
+
+.pizzaPartOne img {
+    position: relative;
+    left: 35%;
+}
+
+.pizzaPartOne h1 {
+    text-align: center;
+}
+
+.q1 {
+    text-align: center;
+}
+
+
+/* User Information Page */
+
+/* Heading */
+
+body .userInfoPage {
+
+}
+
+.heading {
+    width: 100%;
+    /* border: 2px solid; */
+    font-size: 20px;
+    margin: 0 0 20px 0;
+}
+
+.heading h1 {
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+}
+
+/* Input fields */
+input[type= text] {
+    width: 100%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    font-size: 20px;
+    margin: 8px 0;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: .3s;
+    line-height: 10px;
+}
+
+input[type= text]:focus {
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+.inputWithIcon input[type= text] {
+    padding-left: 50px;
+}
+
+.inputWithIcon {
+    position: relative;
+}
+
+.inputWithIcon i {
+    position: absolute;
+    top: 9px;
+    left: 0.7px;
+    padding: 5px 7px;
+    color: #aaa;
+    transition: .3s;
+}
+
+.inputWithIcon input[type= text]:focus + i {
+    color: dodgerblue;
+}
+
+.inputWithIcon.inputIconBg i {
+    background-color: #aaa;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 2px 0 0 2px;
+}
+
+.inputWithIcon.inputIconBg input[type= text]:focus + i {
+    color: #fff;
+    background-color: dodgerblue;
+}
+
+/* Input border */
+.myInput {
+    width: 60%;
+    min-width: 400px;
+    max-width: 500px;
+    border: 2px solid;
+    padding: 30px 20px;
+    margin: auto;
+    border-radius: 10px;
+    position: absolute;
+    top: 150px;
+    left: 450px;
+}
+
+p[type= submit] {
+    position: relative;
+    width: 20%;
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    left: 40%;
+}
+
+p[type= submit]:hover {
+    cursor: pointer;
+}
