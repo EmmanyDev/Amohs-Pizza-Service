@@ -1,23 +1,34 @@
 /* Home page */
 .homePage {
     position: relative;
+    height: 50vh;
     font-family: 'Fredoka One', cursive;
-    background: rgb(131,58,180);
+    /* background: rgb(131,58,180); */
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
     background-size: 200% 200%;
+    /* background-size: cover; */
     background-repeat: no-repeat;
+    display: column;
 }
 
 .homeHeading {
-    min-width: 900px;
-    max-width: 1000px;
+    /* min-width: 900px;
+    max-width: 1000px; */
     border: 2px solid none;
     margin: auto;
     color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homeHeading img {
+    border-radius: 20px;
 }
 
 .homeHeading h1 {
-    font-size: 70px;
+    font-size: 60px;
     text-align: center;
     font-family: 'Fredoka One', cursive;
 }
@@ -28,26 +39,24 @@
     font-family: 'Fredoka One', cursive;
 }
 
-.homeOptions {
-    width: 60%;
-    min-width: 400px;
-    max-width: 600px;
+.homePage .homeOptions {
+    /* border: 2px solid; */
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
     border: 2px solid none;
-    padding: 20px;
-    height: 130px;
+    padding: 10px 0;
     position: relative;
-    margin: auto;
-    top: 150px;
 }
 
-.homeOptions .beginOrder {
-    width: 50%;
-    min-width: 200px;
-    max-width: 250px;
+/* .homeOptions .beginOrder {
     border: 2px solid;
     border-radius: 10px;
     float: left;
-    padding: 5px;
+    padding: 30px 40px;
+    margin: 0 3rem;
     font-size: 30px;
     text-align: center;
     font-family: 'Fredoka One', cursive;
@@ -56,16 +65,33 @@
     -moz-box-shadow: 7px 6px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 7px 6px 5px 0px rgba(0,0,0,0.75);
     transition: 0.2s;
+} */
+
+.homeOptions .beginOrder a {
+    border: 2px solid;
+    color: black;
+    border-radius: 10px;
+    float: left;
+    padding: 30px 40px;
+    margin: 0 3rem;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    background-color: #fff;
+    -webkit-box-shadow: 7px 6px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 6px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 7px 6px 5px 0px rgba(0,0,0,0.75);
+    transition: 0.2s;
+    text-decoration: none; 
 }
 
+/* 
 .homeOptions .inform {
-    width: 40%;
-    min-width: 100px;
-    max-width: 150px;
     border: 2px solid;
     border-radius: 10px;
     float: right;
-    padding: 5px;
+    padding: 30px 70px;
+    margin: 0 3rem;
     font-size: 30px;
     text-align: center;
     font-family: 'Fredoka One', cursive;
@@ -73,45 +99,96 @@
     -webkit-box-shadow: 7px 6px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 7px 6px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 7px 6px 5px 0px rgba(0,0,0,0.75);
-    transition: 0.2s;
+    transition: 0.3s;
+} */
+
+.homeOptions .inform a {
+    border: 2px solid;
+    border-radius: 10px;
+    color: black;
+    float: right;
+    padding: 30px 70px;
+    margin: 0 3rem;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    background-color: #fff;
+    -webkit-box-shadow: 7px 6px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 6px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 7px 6px 5px 0px rgba(0,0,0,0.75);
+    transition: 0.3s;
+    text-decoration: none;
 }
 
-.homeOptions .beginOrder:hover {
+.homeOptions a:hover {
     color: white;
-    background: rgb(131,58,180);
+}
+
+
+.homeOptions .beginOrder a:hover {
+    color: white;
+    /* background: rgb(131,58,180); */
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
     cursor: pointer;
 }
 
-.homeOptions .inform:hover {
+.homeOptions .inform a:hover {
     color: white;
     background: rgb(131,58,180);
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 100%, rgba(252,176,69,1) 100%);
     cursor: pointer;
 }
 
-.homeOptions .beginOrder:active {
-    -webkit-box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
+.homeOptions .beginOrder a:active {
+    box-shadow: none;
 }
 
-.homeOptions .inform:active {
-    -webkit-box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
+.homeOptions .inform a:active {
+    box-shadow: none;
 }
 
+@media screen and (max-width: 768px) {
+    .homeHeading img {
+        width: 150px;
+    }
+
+    .homeHeading h1 {
+        font-size: 50px;
+    }
+
+    .homeHeading h3 {
+        font-size: 17px;
+    }
+
+    .homePage .homeOptions {
+        flex-direction: column;
+    }
+
+    .homeOptions .beginOrder {
+        margin-bottom: 40px;
+    }
+
+    .homeOptions .beginOrder a {
+        width: 300px;
+    }
+    
+    .homeOptions .inform {
+        margin-bottom: 10px;
+    }
+
+    .homeOptions .inform a {
+        width: 250px;
+    }
+}
+
+/*
 .homeFooter {
-    width: 100%;
     border: 2px solid;
-    height: 100px;
     position: relative;
-    top: 400px;
+    top: 200px;
     font-family: 'Fredoka One', cursive;
     text-align: center;
-    padding: 15px;
-    line-height: 1.5em;
+    padding: 35px;
     background-color: #fff;
 }
 
@@ -120,43 +197,23 @@
 }
 
 .homeFooter .footerLaw {
-    line-height: 1.5em;
+    line-height: 2.5em;
+    letter-spacing: 0.5px;
 }
 
+.homeFooter .footerLaw .copyrights {
+    border: 2px solid;
+    display: flex;
+}
+
+.homeFooter .footerLaw .copyrights i {
+    font-size: 3rem;
+}
+*/
 
 /* Making pizza part one */
 
-/* body class */
-.questionOne {
-    position: relative;
-}
 
-.pizzaPartOne {
-    border: 2px solid black;
-    position: absolute;
-    top: 200px;
-    left: 35%;
-    width: 30%;
-}
-
-.pizzaPartOne form {
-    padding: 15px;
-
-
-}
-
-.pizzaPartOne img {
-    position: relative;
-    left: 35%;
-}
-
-.pizzaPartOne h1 {
-    text-align: center;
-}
-
-.q1 {
-    text-align: center;
-}
 
 
 /* User Information Page */
